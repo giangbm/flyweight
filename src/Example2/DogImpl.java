@@ -11,6 +11,7 @@ public class DogImpl implements IAnimal {
     public DogImpl(String colorHair) {
         this.colorHair = colorHair;
         System.out.println("Create dog with color hair: "+ colorHair);
+        System.out.println("---------------");
     }
 
     @Override
