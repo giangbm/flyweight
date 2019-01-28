@@ -3,21 +3,18 @@ package Example2;
 
 public class Main {
     public static void main(String[] args) {
-        createDog("red", "meo meo", "Pit bulls");
-        createDog("red", "gau gau", "Huskis");
-        createDog( "red", "name1", "type5");
-        createDog( "red", "name2", "type6");
-        createDog( "black", "mickey", "Poodles");
-        createDog( "black", "jerry", "NTT");
-        createDog( "black", "name3", "type1");
-        createDog( "black", "name4", "type2");
-        createDog( "black", "name5", "type3");
-        createDog( "black", "name6", "type4");
+        // create 4 dog color red & 6 dog color black
+        createDog(2,"red","Pit bulls");
+        createDog(3,"red","Huskis");
+        createDog(4,"black","Poodles");
+        createDog(5,"black","NTT");
     }
 
-    public static void createDog( String colorHair, String name, String type) {
-            Dog dog = new Dog(name, type);
+    public static void createDog(int number, String colorHair,String type) {
+        for (int i = 0; i < number; i ++) {
+            Dog dog = new Dog(type);
             DogImpl dogImpl = DogFactory.createWithColorHair(colorHair);
-            dogImpl.create(dog);
+            dogImpl.promote(dog);
+        }
     }
 }
