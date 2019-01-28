@@ -1,18 +1,12 @@
-Create dog with color hair: red
-Id: 1 type: Pit bulls - red
-Id: 2 type: Pit bulls - red
-Id: 3 type: Huskis - red
-Id: 4 type: Huskis - red
-Id: 5 type: Huskis - red
-Create dog with color hair: black
-Id: 6 type: Poodles - black
-Id: 7 type: Poodles - black
-Id: 8 type: Poodles - black
-Id: 9 type: Poodles - black
-Id: 10 type: NTT - black
-Id: 11 type: NTT - black
-Id: 12 type: NTT - black
-Id: 13 type: NTT - black
-Id: 14 type: NTT - black
-
-Process finished with exit code 0
+Create dog with color hair: RED
+---------------
+Name: apple type: Pit bulls - RED
+Name: orange type: Huskis - RED
+Name: coconut type: Huskis - RED
+Create dog with color hair: BLACK
+---------------
+Name: apricot type: Poodles - BLACK
+Name: blue berry type: NTT - BLACK
+Name: banana type: NTT - BLACK
+Name: mango type: Poodles - BLACK
+Name: strawberry type: Huskis - BLACK
