@@ -1,25 +1,21 @@
 package Example2;
 
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
-    public static List<Dog> dogList = new ArrayList<>();
     public static void main(String[] args) {
-        // create 4 dog color red & 6 dog color black
-        createDog(2,"red","Pit bulls");
-        createDog(3,"red","Huskis");
-        createDog(4,"black","Poodles");
-        createDog(5,"black","NTT");
+        // create 3 dog color red & 5 dog color black
+        createDog("apple","red","Pit bulls");
+        createDog("orange","red","Huskis");
+        createDog("coconut","red","Huskis");
+        createDog("apricot","black","Poodles");
+        createDog("blue berry","black","NTT");
+        createDog("banana","black","NTT");
+        createDog("mango","black","Poodles");
+        createDog("strawberry","black","Huskis");
     }
 
-    public static void createDog(int number, String colorHair,String type) {
-        for (int i = 0; i < number; i ++) {
-            Dog dog = new Dog(dogList.size() + 1, type);
+    public static void createDog(String name, String colorHair,String type) {
+            Dog dog = new Dog(name, type);
             DogImpl dogImpl = DogFactory.createWithColorHair(colorHair);
             dogImpl.promote(dog);
-            dogList.add(dog);
-        }
     }
 }
