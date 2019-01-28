@@ -7,8 +7,9 @@ public class FlyWeightExample {
         GrpcClient client1 = new GrpcClientRegistration();
         client1.getUser();
 
+        GrpcClient client2 = new GrpcClientRegistration();
         // client 2
-        client1.getUser();
+        client2.getUser();
 
     }
 }
