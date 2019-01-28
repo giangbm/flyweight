@@ -10,7 +10,6 @@ public class GrpcClientRegistration implements GrpcClient {
         System.out.println("Sub: " + stub);
     }
 
-    //    Flyweight
 
     public Stub getStub() {
         if (stub == null) {

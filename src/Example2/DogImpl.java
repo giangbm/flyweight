@@ -15,6 +15,6 @@ public class DogImpl implements IAnimal {
 
     @Override
     public void promote(Dog dog) {
-        System.out.println("Type: "+ dog.getType() + " - "+  colorHair);
+        System.out.println("Id: "+ dog.getId() + " type: "+ dog.getType() + " - "+  colorHair);
     }
 }
